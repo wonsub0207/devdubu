@@ -1,0 +1,33 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.todo-list-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1em;
+  min-height: 200px;
+}
+
+.todo-list-empty p {
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .todo-list {
+    gap: 10px;
+  }
+
+  .todo-list-empty {
+    min-height: 150px;
+    font-size: 1em;
+  }
+}
